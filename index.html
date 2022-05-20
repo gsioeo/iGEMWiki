@@ -21,7 +21,7 @@
             top: 0;
             z-index: 1000;
             width: 100%;
-            height: 2px;
+            height: 2rem;
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
@@ -60,12 +60,12 @@
     <header>
         <a href="#" class="logo">AlbertYang</a>
         <ul class="navigation">
-            <li><a href="#">首页</a></li>
-            <li><a href="#">博客</a></li>
-            <li><a href="#">联系我</a></li>
-            <li><a href="#">留言板</a></li>
-            <li><a href="#">关于我</a></li>
-            <li><a href="#">照片墙</a></li>
+            <li><a href="#">Homepage</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Parts</a></li>
+            <li><a href="#">Model</a></li>
+            <li><a href="#">Human practice</a></li>
+            <li><a href="#">Team</a></li>
         </ul>
         <div class="search">
             <input type="text" placeholder="Search">
@@ -74,23 +74,48 @@
     </header>
     <div class="banner">
         <div class="content">
-            <h2>响应式布局</h2>
+            <h2>网站结构</h2>
             <p>
-                响应式布局指的是同一页面在不同屏幕尺寸下有不同的布局。
-                传统的开发方式是PC端开发一套，手机端再开发一套，而使用响应式布局只要开发一套就够了。
-                响应式设计与自适应设计的区别：响应式开发一套界面，
-                通过检测视口分辨率，针对不同客户端在客户端做代码处理，
-                来展现不同的布局和内容；自适应需要开发多套界面，
-                通过检测视口分辨率，来判断当前访问的设备是pc端、平板、手机，
-                从而请求服务层，返回不同的页面。CSS3媒体查询可以让我们针对不同的媒体类型定义不同的样式，
-                当重置浏览器窗口大小的过程中，页面也会根据浏览器的宽度和高度重新渲染页面。
+                主要部分：(后期视情况会添加额外的部分)
+                1．Homepage:
+                网站的主页，在这里要介绍我们项目的基本目的，设计，和亮点等等，是网站的门面。
+                2．Project：
+                这里分为以下五个小部分：
+                1) Description：包括项目简介，灵感，目的，
+                2) Design：主要讲线路的设计思路
+                3) Experiment：湿实验的数据记录
+                4) Safety：在这个部分说明你的项目的安全性，包括实验室环境安全、实验操作 安全、项目过程中的生物安全、HP安全等等
+                5) Note：介绍从项目开始到结束的时间线
+                3. Parts：
+                1) Overview:在这里用表格介绍基本零件和复合零件
+                2) Collection：用表格介绍项目里面用到的所有复合零件
+                3) Improved Parts：介绍我们对前人的零件做了什么改进
+                4. Model：
+                在这个部分介绍我们的模型，内容形式类似于一篇小论文，包括summary、results analysis、application等等部分。
+                5. Human practice：
+                1) Integrated human practice:介绍我们项目的整体的HP的流程
+                2) Partnership：介绍我们团队与其他团队的合作情况
+                6. Team：
+                1) Meet the team:介绍整个团队的所有成员
+                2) Attribution：介绍团队里的每个人都做了什么工作
+
+
             </p>
-            <a href="#">阅读全文</a>
+            <img src="./static/picture/DNA.jpg" class="image">
+            <p>
+                这周工作：
+            </p>
+            <p>
+                完成了留言板：使用valine，后端（数据库等）架设在leancloud上。测试部署在git pages上评论区可用（git pages与iGEM提供的命名空间类似，均托管静态页面）。
+            </p>
+            <p>
+                用纯CSS进行了响应式设计。使用媒体查询样式@media探测屏幕宽度，加载对应屏幕宽度范围使用对应的样式表。屏幕宽度的“断点"分别为600px、991px。具体CSS代码可以在 <a href="https://github.com/gsioeo/iGEMWiki/tree/master/static/css">这里</a>下载。
+            </p>
         </div>
-        
-        <img src="1.jpg" class="image">
+
+       
     </div>
-    
+
     <div id="vcomments"></div>
     <script>
         new Valine({
