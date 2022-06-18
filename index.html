@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- 以下为页面顶端进度条代码 -->
     <progress id="content_progress" value="0"></progress>
     <style>
         #content_progress {
@@ -57,26 +58,146 @@
             });
         });
     </script>
-    <header>
+<header>
+    <div class="container">
+        <div class="nav-btn">
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-link" style="--i: .6s">
+                        <a href="#">Homepage</a>
+                    </li>
+                    <li class="nav-link" style="--i: .85s">
+                        <a href="#">Project<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">      
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="#">Description</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Design</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Experiment</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Safety</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Note</a>
+                                </li>
+                                <div class="arrow"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-link" style="--i: 1.1s">
+                        <a href="#">Parts<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="#">Overview</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Collection</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Improved Parts</a>
+                                </li>
+                                <div class="arrow"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-link" style="--i: 1.35s">
+                        <a href="#">Model</a>
+                    </li>
+                    <li class="nav-link" style="--i: 1.6s">
+                        <a href="#">Human Practice<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="#">Integrated human practice</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Partnership</a>
+                                </li>
+                                <div class="arrow"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-link" style="--i: 1.85s">
+                        <a href="#">Team<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="#">Meet the team</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Attribution</a>
+                                </li>
+                                <div class="arrow"></div>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="hamburger-menu-container">
+                    <div class="hamburger-menu">
+                        <div></div>
+                    </div>
+                </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <!-- <header>
         <a href="#" class="logo">Whac-A-Mole</a>
         <ul class="navigation">
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Parts</a></li>
-            <li><a href="#">Model</a></li>
-            <li><a href="#">Human practice</a></li>
-            <li><a href="#">Team</a></li>
+            <li><a href="#">Homepage</a>
+            </li>
+            <li><a href="#">Project</a>
+                <div>
+                    <a href="">Description</a>
+                    <a href="">Design</a>
+                    <a href="">Experiment</a>
+                    <a href="">Safety</a>
+                    <a href="">Note</a>
+                </div>
+            </li>
+            <li><a href="#">Parts</a>
+                <div>
+                    <a href="">Overview</a>
+                    <a href="">Collection</a>
+                    <a href="">Improved Parts</a>
+                </div>
+            </li>
+            <li><a href="#">Model</a>
+            </li>
+            <li><a href="#">Human practice</a>
+                <div>
+                    <a href="">Integrated human practice</a>
+                    <a href="">Partnership</a>
+                </div>
+            </li>
+            <li><a href="#">Team</a>
+                <div>
+                    <a href="">Meet the team</a>
+                    <a href="">Attribution</a>
+                </div>
+            </li>
         </ul>
         <div class="search">
             <input type="text" placeholder="Search">
             <i class="fa fa-search" aria-hidden="true"></i>
         </div>
-    </header>
+    </header> -->
     <div class="banner">
         <div class="content">
             <h2>网站结构</h2>
             <p>
+<<<<<<< HEAD
                 主要部分：(后期视情况会添加额外的部分)
+=======
+>>>>>>> 20f356cd9c687775e92b7b9f478349a0e2e61303
                 1．Homepage:
                 网站的主页，在这里要介绍我们项目的基本目的，设计，和亮点等等，是网站的门面。
                 2．Project：
@@ -100,6 +221,7 @@
                 2) Attribution：介绍团队里的每个人都做了什么工作
 
 
+<<<<<<< HEAD
             </p>
             <img src="./static/picture/DNA.jpg" class="image">
             <p>
@@ -114,6 +236,17 @@
         </div>
 
        
+=======
+            </p>
+            <p></p>
+            <p>已完成工作</p>
+            <p>留言板√：使用valine，后端架设在leancloud上。经过git pages的托管测试，留言板在静态页面托管中可以正常使用。</p>
+            <p>正在进行工作</p>
+            <p>使用@media查询设备屏幕宽度，加载对应宽度区间的CSS文件。目前屏幕宽度按600px\991px分成三个区间。正在调试CSS.</p>
+        </div>
+
+        <img src="./static/img/DNA.jpg" class="image">
+>>>>>>> 20f356cd9c687775e92b7b9f478349a0e2e61303
     </div>
 
     <div id="vcomments"></div>
